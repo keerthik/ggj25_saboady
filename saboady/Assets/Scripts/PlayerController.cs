@@ -13,6 +13,11 @@ public class PlayerController : MonoBehaviour
         movement = context.ReadValue<Vector2>();
     }
 
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        Debug.Log("Interacting...");
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,5 +36,22 @@ public class PlayerController : MonoBehaviour
         transform.Translate(move * speed * Time.deltaTime, Space.World);
     }
 
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Collided with " + other.name);
+
+
+        // show a message to the player
+
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("E Pressed while interacting with: " + other.name);
+        }
+    }
 }
 
