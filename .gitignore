@@ -136,6 +136,7 @@ OAuth*.meta
 sysinfo.txt
 
 saboady/UserSettings/EditorUserSettings.asset
+saboady/UserSettings/Layouts/default*
 !Library/*.asset
 !Library/AssetImportState
 !Library/AssetVersioning.db
