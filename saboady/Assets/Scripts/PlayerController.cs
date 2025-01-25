@@ -8,9 +8,14 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
     private Vector2 movement;
-    private bool checkForKeyPress = false;
+    private GameObject interactableObject;
+    private bool isInteracting;
     public TextMeshPro interactText;
     
+    void Awake()
+    {
+        interactableObject = null;
+    }
     public void OnMove(InputAction.CallbackContext context)
     {
         movement = context.ReadValue<Vector2>();
@@ -26,9 +31,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         movePlayer();
-        if(checkForKeyPress)
+        if (interactableObject)
         {
-            checkKeyPress();
+            WaitForInteractPress();
         }
     }
 
@@ -43,7 +48,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Collided with " + other.name);
         // show a message to the player
-        checkForKeyPress = true;
+        interactableObject = other.gameObject;
         interactText.gameObject.SetActive(true);
     }
 
@@ -51,15 +56,20 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Exited collision with " + other.name);
         // hide the message to the player
-        checkForKeyPress = false;
+        interactableObject = null;
         interactText.gameObject.SetActive(false);
     }
 
-    void checkKeyPress()
+    void WaitForInteractPress()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("Interaction pressed");
+            isInteracting = !isInteracting;
+            if (isInteracting) {
+                HudEntities.Shared.SetDialog(
+                    ConstructorStrings.Shared.park_welcome, 
+                    PlayerStrings.Shared.ok);
+            }
         }
     }
    

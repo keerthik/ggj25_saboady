@@ -21,9 +21,10 @@ public class HudEntities : SingletonBehaviour<HudEntities>
         response.text = responseStr;
     }
 
+    public void DismissDialog() {
+        dialogPanel.SetActive(false);
+    }
+
     void Start() {
-        SetDialog(
-            ConstructorStrings.Shared.park_welcome, 
-            PlayerStrings.Shared.ok);
     }
 }
