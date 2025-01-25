@@ -816,7 +816,7 @@ MonoBehaviour:
   - {fileID: 1832403186721483659}
   - {fileID: 6240052485791872330}
   - {fileID: 4637458982200449407}
-  dialogPanel: {fileID: 0}
+  dialogPanel: {fileID: 8125804624082670580}
   dialog: {fileID: 5879020622509588203}
   response: {fileID: 4924284062599021938}
 --- !u!1 &8125804624082670580
