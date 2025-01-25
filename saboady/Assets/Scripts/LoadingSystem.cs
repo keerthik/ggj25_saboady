@@ -9,7 +9,7 @@ public class LoadingSystem : SingletonBehaviour<LoadingSystem>
     public enum SCENE {
         SPLASH      = 0,
         MAINMENU    = 1,
-        LEVEL0      = 2,
+        PARK     = 2,
         UNKNOWN     = -1,
     }
 
