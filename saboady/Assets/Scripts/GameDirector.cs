@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class GameDirector : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    void Awake() {
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Start() {
+        // Let's load the main menu and show it when it's ready.
+        LoadingSystem.Shared.LoadSceneAndThen(LoadingSystem.SCENE.MAINMENU, () => {
+            // Do a camera fade or something if you want
+            LoadingSystem.Shared.MakeCurrentSceneActive();
+        });
     }
 }

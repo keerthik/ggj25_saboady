@@ -1,0 +1,48 @@
+using System;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class LoadingSystem : SingletonBehaviour<LoadingSystem>
+{
+    public enum SCENE {
+        SPLASH      = 0,
+        MAINMENU    = 1,
+        LEVEL0      = 2,
+        UNKNOWN     = -1,
+    }
+
+    [SerializeField] private SCENE currentScene = SCENE.SPLASH;
+
+    private Action onLoadComplete = null;
+
+    void Update() {
+        if (onLoadComplete == null) return;
+        onLoadComplete.Invoke();
+        onLoadComplete = null;
+    }
+
+    // Show a spinny wheel in the corner
+    private void ShowLoadingAnimation(bool show) {
+        if (show) {
+
+        } else {
+            // Hide the spinny wheel
+        }
+    }
+
+    public void MakeCurrentSceneActive() {
+        Scene newScene = SceneManager.GetSceneByBuildIndex((int)currentScene);
+        SceneManager.SetActiveScene(newScene);
+    }
+
+    public void LoadSceneAndThen(SCENE scene, Action action) {
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync((int)scene);
+        ShowLoadingAnimation(true);
+        loadOperation.completed += (AsyncOperation op) => {
+            ShowLoadingAnimation(false);
+            currentScene = scene;
+            onLoadComplete = action;
+        };
+        
+    }
+}
