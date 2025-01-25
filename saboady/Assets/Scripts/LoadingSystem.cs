@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class LoadingSystem : SingletonBehaviour<LoadingSystem>
 {
+
+    // Align this enum with the indexing of scenes in Build Profiles/Scene List
     public enum SCENE {
         SPLASH      = 0,
         MAINMENU    = 1,
@@ -11,7 +13,7 @@ public class LoadingSystem : SingletonBehaviour<LoadingSystem>
         UNKNOWN     = -1,
     }
 
-    [SerializeField] private SCENE currentScene = SCENE.SPLASH;
+    [EditorReadOnly][SerializeField] private SCENE currentScene = SCENE.SPLASH;
 
     private Action onLoadComplete = null;
 
