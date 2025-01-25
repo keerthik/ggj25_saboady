@@ -11,7 +11,12 @@ public class HudEntities : SingletonBehaviour<HudEntities>
     [SerializeField] TMP_Text dialog;
     [SerializeField] TMP_Text response;
 
+    protected override void Awake() {
+        dialogPanel.SetActive(false);
+    }
+
     public void SetDialog(string dialogStr, string responseStr) {
+        dialogPanel.SetActive(true);
         dialog.text = dialogStr;
         response.text = responseStr;
     }
