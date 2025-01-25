@@ -1,10 +1,11 @@
 using UnityEngine;
 
-public class GameDirector : MonoBehaviour
+public class GameDirector : SingletonBehaviour<GameDirector>
 {
     [SerializeField] private LoadingSystem.SCENE firstScene;
 
-    void Awake() {
+    protected override void Awake() {
+        base.Awake();
         DontDestroyOnLoad(gameObject);
     }
 
