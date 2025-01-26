@@ -16,10 +16,10 @@ public class HudEntities : SingletonBehaviour<HudEntities>
         dialogPanel.SetActive(false);
     }
 
-    public void SetDialog(string dialogStr, string responseStr) {
+    public void SetDialog(string dialogStr, string responseKey) {
         dialogPanel.SetActive(true);
         dialog.text = dialogStr;
-        response.text = responseStr;
+        response.text = $"{Basics.Shared.player[responseKey]} (E)";
     }
 
     public void DismissDialog() {

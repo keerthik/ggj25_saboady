@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2223492843421308443}
   - component: {fileID: 7698630761339625073}
   - component: {fileID: 7209787203371476520}
+  - component: {fileID: 1610641988817426355}
   m_Layer: 0
   m_Name: StringsContainer
   m_TagString: Untagged
@@ -47,17 +48,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player:
-    _keys: []
-    _values: []
-  move_on: 
-  ok: Sure (E)
-  illlook: I'll check it out!
-  thanks: 
-  thanks2: 
-  yessir: 
-  muahaha: Muahahaha?
-  sorry: 
-  yikes: 
+    _keys:
+    - unsure
+    - illlook
+    - ok
+    - moveon
+    _values:
+    - Um...sure
+    - I'll check it out!
+    - Ok
+    - Move along
+  nothing: Talk to someone else!
 --- !u!114 &7698630761339625073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,10 +72,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pond:
-    _keys: []
-    _values: []
-  npc0_contact_0: Grab water from the water fountain!
-  npc0_midquest_1: The fountain is over there!
+    _keys:
+    - contact_0
+    - midquest
+    _values:
+    - "I know we\u2019re floating in the stuff, but could you collect some water
+      from the fountain for me?"
+    - Hey, I really meant that. You got a bottle, just gather some for me.
   water_questdone_1: You obtained water!
   old:
     _keys: []
@@ -140,3 +144,20 @@ MonoBehaviour:
   leader_contact_14_: 
   leader_midquest_14_: 
   leader_questdone_17: 
+--- !u!114 &1610641988817426355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874354248101716655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b563a7b7326c348988e0a3a261ef8bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  all:
+    _keys:
+    - water
+    _values:
+    - 
