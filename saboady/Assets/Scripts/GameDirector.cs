@@ -6,10 +6,16 @@ public class GameDirector : SingletonBehaviour<GameDirector>
 
     public bool niceEnding = true;
 
-    private PlayerProgression progress;
+    // Lazy public data
+    [EditorReadOnly] public int good;
+    [EditorReadOnly] public int bad;
 
-    public static PlayerProgression Progress {
-        get => Shared.progress;
+    public void UpGoodProgress(int latest) {
+        good = Mathf.Max(good, latest);
+    }
+
+    public void UpBadProgress(int latest) {
+        bad = Mathf.Max(bad, latest);
     }
 
     protected override void Awake() {
@@ -18,15 +24,12 @@ public class GameDirector : SingletonBehaviour<GameDirector>
             return;
         }
         base.Awake();
-        progress = new();
+        good = 0;
+        bad = 0;
         DontDestroyOnLoad(gameObject);
     }
 
     void Start() {
-        // Let's load the main menu and show it when it's ready.
-        LoadingSystem.Shared.LoadSceneAndThen(firstScene, () => {
-            // Do a camera fade or something if you want
-            LoadingSystem.Shared.MakeCurrentSceneActive();
-        });
+        Debug.Log("Director is live");
     }
 }

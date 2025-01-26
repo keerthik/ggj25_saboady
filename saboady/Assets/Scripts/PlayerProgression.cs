@@ -1,5 +1,5 @@
 public class PlayerProgression
 {
-    public int constructorProgress = 0;
-    public int cultProgress = 0;
+    public int good = 0;
+    public int bad = 0;
 }

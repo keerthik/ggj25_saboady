@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8880694862807288919}
   - component: {fileID: 2223492843421308443}
   - component: {fileID: 7698630761339625073}
+  - component: {fileID: 7209787203371476520}
+  - component: {fileID: 1610641988817426355}
   m_Layer: 0
   m_Name: StringsContainer
   m_TagString: Untagged
@@ -45,11 +47,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bf5fe9b6686b4f96a3862849df38121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_on: Move along (E)
-  ok: Sure (E)
-  illlook: I'll check it out!
-  thanks: 
-  thanks2: 
+  player:
+    _keys:
+    - unsure
+    - illlook
+    - ok
+    - moveon
+    _values:
+    - Um...sure
+    - I'll check it out!
+    - Ok
+    - Move along
+  nothing: Talk to someone else!
 --- !u!114 &7698630761339625073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,8 +71,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e75ad56eb3db450da41d95027a98fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npc0_contact_0: Grab water from the water fountain!
-  npc0_midquest_1: The fountain is over there!
+  pond:
+    _keys:
+    - contact_0
+    - midquest
+    _values:
+    - "I know we\u2019re floating in the stuff, but could you collect some water
+      from the fountain for me?"
+    - Hey, I really meant that. You got a bottle, just gather some for me.
   water_questdone_1: You obtained water!
-  oldman_1: 
-  oldman_done: 
+  old:
+    _keys: []
+    _values: []
+  oldman_contact_2: 
+  oldman_midquest_3: 
+  soap_obtain_3: 
+  oldman_questdone_4: 
+  tree:
+    _keys: []
+    _values: []
+  tree_contact_5: 
+  tree_midquest_6: 
+  ticket_obtain_6: 
+--- !u!114 &7209787203371476520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874354248101716655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ac5226cccaa44dd87ded79454f14d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  park:
+    _keys: []
+    _values: []
+  generic_contact_0: 
+  generic_midquest_1: 
+  rsoap_obtain_1: 
+  generic_questdone_2: 
+  generic_midquest_3: 
+  dwater_obtain_3: 
+  generic_questdone_4: 
+  door:
+    _keys: []
+    _values: []
+  doorman_contact_5: 
+  doorman_midquest_6: 
+  key_obtain_6: 
+  doorman_questdone_7: 
+  chlorine_obtain_8: 
+  trash:
+    _keys: []
+    _values: []
+  trashman_contact_9: 
+  trashman_midquest_10: 
+  gtrash_obtain_10: 
+  rtrash_obtain_11: 
+  trashman_questdone_12: 
+  uranium_obtain_13: 
+  clumsy:
+    _keys: []
+    _values: []
+  clumsy_contact_14: 
+  clumsy_midquest_15: 
+  gpowder_obtain_16: 
+  leader:
+    _keys: []
+    _values: []
+  leader_contact_14_: 
+  leader_midquest_14_: 
+  leader_questdone_17: 
+--- !u!114 &1610641988817426355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874354248101716655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b563a7b7326c348988e0a3a261ef8bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  all:
+    _keys:
+    - water
+    _values:
+    - 
