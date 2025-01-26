@@ -1,18 +1,18 @@
 using System;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
     // Override this for each interactable in the game
+    [SerializeField] protected bool goodTrack;
+    protected int TrackProgress => goodTrack? GameDirector.Shared.good : GameDirector.Shared.bad;
     public virtual (string, string) GetDialog() {
         return ("", "");
     }
 
-    public virtual void DismissAction() {
-        
-    }
+    public abstract void DismissAction();
 
-    protected void Awake() {
+    protected virtual void Awake() {
         GetComponent<Collider>().isTrigger = true;
     }
 }
