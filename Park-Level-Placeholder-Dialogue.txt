@@ -4,32 +4,37 @@ Park Dialogue
     - 1stcontact: Grab water from the water fountain!
       response: Sure
     - midquest: The fountain is over there!
-      response: Thanks
+      response: I'll check it out!
+    - ObtainItem: You obtained water!
 
 - Old man NPC
     - 1stcontact: Get soap for me
       response: Sure
-midquest : I’m sure I dropped it somewhere.
-response: I’ll find it!
-    - questdone: Thank you, have some extra.
+    - midquest : I’m sure I dropped it somewhere.
+      response: I’ll find it!
+    - ObtainItem: You obtained Soap.
+    - quest2done: Thank you, have some extra.
       response: Thanks
 
 - Tree NPC
     - 1stcontact: Get the ticket from the newspaper stand
       response: Sure
-Midquest: The newspaper stand is over there.
-  Response: I’ll go check it out!
+    - Midquest: The newspaper stand is over there.
+      Response: I’ll go check it out!
+    - ObtainItem: You obtained a train ticket!
 
 (END)
 
 - Cultist 
     - 1stcontact: You found me! Bring me stone.
       response: Sure
-    - Midquest: Find me the stone!
-    - quest1done: You found the stone. Bring me dirty water.
+    - Midquest: Find me the radioactive soap!
+    - ObtainItem: You obtained the radioactive soap!
+    - quest1done: You found the radioactive soap. Bring me dirty water.
       response: Sure
+    - ObtainItem: You obtained the dirty water!
     - quest2done: You have found everything needed to join our cult. 
-   - Midquest: Bring the dirty water!
+    - Midquest: Bring the dirty water!
       response: Great
     
 (END)
