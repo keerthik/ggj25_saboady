@@ -15,4 +15,14 @@ public class LevelStart : MonoBehaviour
         Instantiate(stringsPrefab, Vector3.zero, Quaternion.identity);
         Instantiate(hudPrefab, Vector3.zero, Quaternion.identity);
     }
+
+    void Update() {
+        if (GameDirector.Shared.good > 7) {
+            LoadingSystem.Shared.LoadSceneAndThen(LoadingSystem.SCENE.END_SCENE, () => {
+                // Do a camera fade or something if you want
+                LoadingSystem.Shared.MakeCurrentSceneActive();
+        });
+
+        }
+    }
 }

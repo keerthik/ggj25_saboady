@@ -10,9 +10,9 @@ public class LoadingSystem : SingletonBehaviour<LoadingSystem>
         START_SCENE         = 0, //Loading
         SPLASH              = 1, //start button
         LEVEL_PARK          = 2, 
-        LEVEL_MUSEUM        = 3, 
-        LEVEL_CATHEDRAL     = 4, 
-        END_SCENE           = 5,
+        // LEVEL_MUSEUM        = 3, 
+        // LEVEL_CATHEDRAL     = 4, 
+        END_SCENE           = 3,
         CREDITS             = 6,
         PLAYER_TEST         = 7,
         UNKNOWN             = -1,
