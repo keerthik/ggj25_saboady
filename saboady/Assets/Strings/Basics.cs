@@ -5,4 +5,5 @@ public class Basics : SingletonBehaviour<Basics>
 {
     public SerializableDictionary<string, string> player;
     public string nothing;
+    public string stuff;
 }

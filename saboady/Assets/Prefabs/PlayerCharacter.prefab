@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 560269205225864256}
   serializedVersion: 2
   m_LocalRotation: {x: 0.53435224, y: 0, z: 0, w: 0.8452619}
-  m_LocalPosition: {x: 0, y: 14.289864, z: -6.4340286}
+  m_LocalPosition: {x: 0, y: 9.773188, z: -4.2893524}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 4080509391383135712}
   - component: {fileID: 2388814762670183304}
   - component: {fileID: 8222343614598810384}
-  - component: {fileID: 5019582927642289441}
+  - component: {fileID: 3865098900490143924}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -359,8 +359,8 @@ Transform:
   m_GameObject: {fileID: 7581345669015143268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8873384, y: 1.56, z: 1.3505183}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 263737894750155481}
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8222343614598810384}
-  speed: 20
+  speed: 40
   interactText: {fileID: 7277778006786171310}
   smooth: 10
 --- !u!114 &4080509391383135712
@@ -552,8 +552,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!135 &5019582927642289441
-SphereCollider:
+--- !u!65 &3865098900490143924
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -571,8 +571,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 3
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 4, z: 3}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &9110579829375236439
 GameObject:
   m_ObjectHideFlags: 0
