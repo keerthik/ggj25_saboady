@@ -3,8 +3,7 @@ Cathedral Dialogue
 - Cult Leader
     - 1st Contact: I still need materials to make this evil bubble, go and find them!
       Response: Yes Sir!
-    - During Cultist 3, Mid Quest: Oh you need my hat, here I have an extra one.
-      Response: Thank you.
+    - Midquest: I need GUNPOWDER and URANIUM!
     - Quest Done: Great now we can make the evil bubble muahahaha!
       Response: Muahaha?
       
@@ -39,17 +38,7 @@ Cathedral Dialogue
       Response: Nice!
 
 - Cultist 3
-    - 1st Contact: Hey, Your not the leader! I won't confess to just anybody!
-      Response: Sorry.
-    - Mid Quest: I told you get out!
-      Response: Sorry.
-    - Quest Done: (Line 1) Leader, it's you! I was hiding this SULFUR (Yellow Text) from you, IM SORRY!!!!
-      Response: It's Okey.
-                  (Line 2) You received some Sulfur (I)
-      Response: Nice!
-
-- Cultist 4
-    - 1st Contact: Accidently blew up this wall with GUNPOWEDER (Yellow Text), there might be some extra in the    		   rubble somewhere.
+    - 1st Contact: Accidently blew up this wall with GUNPOWDER (Yellow Text), there might be some extra in the    		   rubble somewhere.
       Response: Yikes!
     - Mid Quest: Did you find any extra in there?
       Response: Not yet.
