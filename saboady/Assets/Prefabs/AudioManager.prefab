@@ -175,13 +175,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4437f11663541468b7e4e25a022b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuBackgroundMusic: {fileID: 8300000, guid: 95444a6307f11fa419cb5a4e68166c59, type: 3}
   museumBackgroundMusic: {fileID: 8300000, guid: 7637916d40ea50e45b5afad195637520, type: 3}
   parkBackgroundMusic: {fileID: 8300000, guid: 27e5fedff5b16244a932b3fdda8ff96b, type: 3}
   cultistBackgroundMusic: {fileID: 8300000, guid: bd31375886f3f8049a225c7d3424e9ea, type: 3}
   goodEndingMusic: {fileID: 8300000, guid: fe11c981427cd5349a6f4743deaf3587, type: 3}
-  badEndingMusic: {fileID: 8300000, guid: b4c27cc8d7ea9bf409b028b4b987b9ca, type: 3}
+  badEndingMusic: {fileID: 8300000, guid: aff84f1506f94024098faca6222c3b90, type: 3}
   musicSource: {fileID: 4198937108145565676}
-  sfxSource: {fileID: 1573762568391663752}
+  footstepsSource: {fileID: 0}
+  transitionSource: {fileID: 0}
+  dialogueSource: {fileID: 0}
 --- !u!1 &5024961500194225102
 GameObject:
   m_ObjectHideFlags: 0

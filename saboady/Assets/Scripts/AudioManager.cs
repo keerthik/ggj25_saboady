@@ -70,7 +70,6 @@ public class AudioManager : MonoBehaviour
         if(musicSource.clip != null) 
         {
             musicSource.Play();
-            FadeIn(musicSource);
         }
     }
 
