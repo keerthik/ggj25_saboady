@@ -1,19 +1,29 @@
-PLACEHOLDER DIALOGUE
-Park Level:
-Pond NPC - Grab water from the water fountain!
-Player - Sure
+Park Dialogue
 
-Old man NPC - Get soap for me
-Player - Ok
-Old Man NPC - Thank you, have some extra.
-Player - Thank you.
+- Pond NPC
+    - 1stcontact: Grab water from the water fountain!
+      response: Sure
+    - midquest: The fountain is over there!
+      response: Thanks
 
-Tree NPC - Get the ticket from the newspaper stand
-Player - Ok.
+- Old man NPC
+    - 1stcontact: Get soap for me
+      response: Sure
+    - questdone: Thank you, have some extra.
+      response: Thanks
+
+- Tree NPC
+    - 1stcontact: Get the ticket from the newspaper stand
+      response: Sure
+
 (END)
 
-Cultist - You found me! Bring me stone.
-Player - Ok.
-Cultist - You found the stone. Bring me dirty water.
-Player- Ok.
-Cultist - You have found everything needed to join our cult. (END)
+- Cultist 
+    - 1stcontact: You found me! Bring me stone.
+      response: Sure
+    - quest1done: You found the stone. Bring me dirty water.
+      response: Sure
+    - quest2done: You have found everything needed to join our cult. 
+      response: Great
+    
+(END)
