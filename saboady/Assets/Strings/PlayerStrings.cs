@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerStrings : SingletonBehaviour<PlayerStrings>
 {
+    public SerializableDictionary<string, string> playerStrings;
     public string move_on;
     public string ok;
     public string illlook;
