@@ -81,8 +81,11 @@ MonoBehaviour:
     - Hey, I really meant that. You got a bottle, just gather some for me.
   water_questdone_1: You obtained water!
   old:
-    _keys: []
-    _values: []
+    _keys:
+    - contact_0
+    _values:
+    - "We\u2019re gonna need to keep things clean at the top. Can you grab some soap
+      along the way? I think I left some around here..."
   oldman_contact_2: 
   oldman_midquest_3: 
   soap_obtain_3: 
