@@ -16,7 +16,7 @@ GameObject:
   m_Layer: 0
   m_Name: StringsContainer
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -59,6 +59,7 @@ MonoBehaviour:
     - Ok
     - Move along
   nothing: Talk to someone else!
+  stuff: 
 --- !u!114 &7698630761339625073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,22 +75,22 @@ MonoBehaviour:
   pond:
     _keys:
     - contact_0
-    - midquest
+    - midquest_1
     _values:
     - "I know we\u2019re floating in the stuff, but could you collect some water
       from the fountain for me?"
     - Hey, I really meant that. You got a bottle, just gather some for me.
-  water_questdone_1: You obtained water!
   old:
     _keys:
-    - contact_0
+    - contact_2
+    - midquest_3
+    - questdone_4
     _values:
     - "We\u2019re gonna need to keep things clean at the top. Can you grab some soap
       along the way? I think I left some around here..."
-  oldman_contact_2: 
-  oldman_midquest_3: 
-  soap_obtain_3: 
-  oldman_questdone_4: 
+    - "Keep on lookin\u2019, it\u2019s definitely around here somewhere. "
+    - Heh, you found it. I knew a guy who did construction. He got dysentery; he
+      never washed his hands!
   tree:
     _keys: []
     _values: []
@@ -161,6 +162,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   all:
     _keys:
-    - water
+    - water_1
+    - soap_3
     _values:
     - You obtained water!
+    - You obtained soap!

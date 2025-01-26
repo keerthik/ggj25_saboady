@@ -8,7 +8,7 @@ public abstract class Interactable : MonoBehaviour
     [SerializeField] protected bool goodTrack;
     protected int TrackProgress => goodTrack? GameDirector.Shared.good : GameDirector.Shared.bad;
     public virtual (string, string) GetDialog() {
-        return ("", "");
+        return (Basics.Shared.nothing, "moveon");
     }
 
     public abstract void DismissAction();

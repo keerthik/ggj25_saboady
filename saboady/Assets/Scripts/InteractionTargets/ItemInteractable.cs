@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ItemInteractable : Interactable
@@ -7,14 +8,14 @@ public class ItemInteractable : Interactable
 
     public override (string, string) GetDialog() {
         int trackProgress = goodTrack? GameDirector.Shared.good : GameDirector.Shared.bad;
-        if (GameDirector.Shared.good == 1) {
+        if (TrackProgress == targetProgress - 1) {
             return (Items.Shared.all[itemKey], "moveon");
         } else {
             // isTrigger = false;
             // Make sure doesn't disable too soon
         }
         // We should not have gotten here!
-        return (null, null);
+        return (Basics.Shared.stuff, "moveon");
     }
 
     // Items are non-interactable at the start
@@ -27,6 +28,8 @@ public class ItemInteractable : Interactable
             thisCollider.isTrigger = true;
         }
     }
+
+// All items only increase progress along their track by 1, then disappear
     public override void DismissAction() {
         if (goodTrack) {
             GameDirector.Shared.UpGoodProgress(targetProgress);
@@ -34,6 +37,20 @@ public class ItemInteractable : Interactable
             GameDirector.Shared.UpBadProgress(targetProgress);
         }
         thisCollider.isTrigger = false;
+        StartCoroutine(ItemPicked());
+    }
+
+    private IEnumerator ItemPicked() {
+        float t = 0;
+        float speed = 30f;
+        float spin = 360f;
+        while (t < 3f) {
+            transform.position = transform.position + speed * Vector3.up * Time.deltaTime;
+            transform.Rotate(Vector3.up, spin * Time.deltaTime);
+            t += Time.deltaTime;
+            yield return null;
+        }
+        yield return null;
         gameObject.SetActive(false);
     }
 }
