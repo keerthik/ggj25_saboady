@@ -92,10 +92,10 @@ public class PlayerController : MonoBehaviour
             Interactable idata = interactableObject?.GetComponent<Interactable>();
             if (isInteracting) {
                 string dialog, response;
-                (dialog, response) = idata.GetDialog(GameDirector.Progress);
+                (dialog, response) = idata.GetDialog();
                 HudEntities.Shared.SetDialog(dialog, response);
             } else {
-                idata.DismissAction(GameDirector.Progress);
+                idata.DismissAction();
                 HudEntities.Shared.DismissDialog();
             }
         }
