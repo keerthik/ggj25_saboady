@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_Park.unity
     guid: 2478b6ce18a50384bb2d1f5f6d47fd17
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level_Museum.unity
     guid: f08f9181637e1c24fbe5bdb1d72c93f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level_Cathedral.unity
     guid: 8a5d328c43202164299b171eab42c9fc
   - enabled: 1
