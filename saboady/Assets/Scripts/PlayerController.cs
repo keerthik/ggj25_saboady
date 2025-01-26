@@ -93,6 +93,7 @@ public class PlayerController : MonoBehaviour
             if (isInteracting) {
                 string dialog, response;
                 (dialog, response) = idata.GetDialog();
+                HudEntities.Shared.SetPortrait(idata.portrait);
                 HudEntities.Shared.SetDialog(dialog, response);
             } else {
                 idata.DismissAction();

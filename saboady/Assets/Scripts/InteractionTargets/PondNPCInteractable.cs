@@ -3,22 +3,20 @@ using UnityEngine;
 public class PondNPCInteractable : Interactable
 {
     public override (string, string) GetDialog() {
-        if (GameDirector.Shared.good < 1) {
+        if (TrackProgress < 1) {
             return (Constructors.Shared.pond["contact_0"], "unsure");
-        } else if (GameDirector.Shared.good == 1) {
-            return (Constructors.Shared.pond["midquest"], "illlook");
-        } else {
-            // isTrigger = false;
+        } else if (TrackProgress == 1) {
+            return (Constructors.Shared.pond["midquest_1"], "illlook");
         }
-        // We should not have gotten here!
-        return (Basics.Shared.nothing, "moveon");
+        // We have nothing to do with this guy
+        return base.GetDialog();
     }
     public override void DismissAction() {
-        if (GameDirector.Shared.good < 2) {
+        if (TrackProgress < 2) {
             GameDirector.Shared.UpGoodProgress(1);
         } else {
+            // midquest
             GameDirector.Shared.UpGoodProgress(2);
         }
     }
-
 }
