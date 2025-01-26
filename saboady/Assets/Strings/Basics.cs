@@ -1,7 +1,9 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStrings : SingletonBehaviour<PlayerStrings>
+public class Basics : SingletonBehaviour<Basics>
 {
+    public SerializableDictionary<string, string> player;
     public string move_on;
     public string ok;
     public string illlook;

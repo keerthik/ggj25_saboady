@@ -11,4 +11,8 @@ public class Interactable : MonoBehaviour
     public virtual void DismissAction(PlayerProgression progress) {
         
     }
+
+    protected void Awake() {
+        GetComponent<Collider>().isTrigger = true;
+    }
 }
