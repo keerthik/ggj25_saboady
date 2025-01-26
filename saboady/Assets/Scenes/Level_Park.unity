@@ -1264,10 +1264,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -276110289498514276, guid: 0aa79b9cdaf6b8445ad42642de2b2082, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 430766637ba57ab45a2e762d36dbdb4e, type: 2}
     - target: {fileID: 919132149155446097, guid: 0aa79b9cdaf6b8445ad42642de2b2082, type: 3}
       propertyPath: m_Name
       value: Cultist
       objectReference: {fileID: 0}
+    - target: {fileID: 4831018558786363571, guid: 0aa79b9cdaf6b8445ad42642de2b2082, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5048546589143509264, guid: 0aa79b9cdaf6b8445ad42642de2b2082, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 430766637ba57ab45a2e762d36dbdb4e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
