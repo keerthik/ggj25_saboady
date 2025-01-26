@@ -4,6 +4,8 @@ public class GameDirector : SingletonBehaviour<GameDirector>
 {
     [SerializeField] private LoadingSystem.SCENE firstScene;
 
+    public bool niceEnding = true;
+
     protected override void Awake() {
         base.Awake();
         DontDestroyOnLoad(gameObject);
