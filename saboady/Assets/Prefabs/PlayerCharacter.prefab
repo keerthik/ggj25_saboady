@@ -25,7 +25,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2754341062928902737}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.99127674, y: 0.99127674, z: 0.99127674}
   m_ConstrainProportionsScale: 0
@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 6806377919741991860}
   - component: {fileID: 4080509391383135712}
   - component: {fileID: 2388814762670183304}
+  - component: {fileID: 1299372962280010194}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -304,8 +305,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c692e94f91d0a48fba805bfdf8048477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1299372962280010194}
   speed: 10
   interactText: {fileID: 7277778006786171310}
+  smooth: 10
 --- !u!114 &4080509391383135712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +454,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1299372962280010194
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7581345669015143268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: fdb287e8e936549bb8703ba55400be38, type: 3}
+  m_Controller: {fileID: 9100000, guid: 23fbabef538904e6eadba205761b6200, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 1
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9110579829375236439
 GameObject:
   m_ObjectHideFlags: 0
