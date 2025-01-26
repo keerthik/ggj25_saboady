@@ -9,14 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 278c6a7c49cd33b439afee9cf5275994
   - enabled: 1
-    path: Assets/Scenes/Playgrounds/Player_test.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Splash.unity
+    guid: 81473b951a44d45aa85f416d6bf793b3
   - enabled: 1
+    path: Assets/Scenes/Level_Park.unity
+    guid: 2478b6ce18a50384bb2d1f5f6d47fd17
+  - enabled: 0
     path: Assets/Scenes/Playgrounds/UI_test.unity
     guid: ed917f65531f044c68751782a65f2111
   - enabled: 1
-    path: Assets/Scenes/Splash.unity
-    guid: 81473b951a44d45aa85f416d6bf793b3
+    path: Assets/Scenes/EndScene.unity
+    guid: 3751b90f1a0454c55b23fa233a7faf52
+  - enabled: 1
+    path: Assets/Scenes/Playgrounds/Player_test.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b1ce9ef2bd2d343da87a058c716eff0c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

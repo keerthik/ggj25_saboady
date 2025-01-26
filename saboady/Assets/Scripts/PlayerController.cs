@@ -6,6 +6,8 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public Animator animator;
     public float speed = 0;
     private Vector2 movement;
     private GameObject interactableObject;
@@ -25,22 +27,44 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         interactText.gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        movePlayer();
+        if (!isInteracting)
+        {
+            movePlayer();
+        }
+        // interactableObject is not null if we're close to one
         if (interactableObject)
         {
             WaitForInteractPress();
         }
     }
 
+    public float smooth = 3.0f;
     public void movePlayer()
     {
         Vector3 move = new Vector3(movement.x, 0, movement.y);
-        transform.Translate(move * speed * Time.deltaTime, Space.World);
+
+        if(move != Vector3.zero)
+        {
+            // Translate the player
+            transform.Translate(move * speed * Time.deltaTime, Space.World);
+            // Rotate the player
+            //transform.LookAt(transform.position + new Vector3(movement.x, 0, movement.y));
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), Time.deltaTime * smooth);
+     
+            // Rotate the text to face the player
+            interactText.transform.rotation = Quaternion.Slerp(interactText.transform.rotation, Quaternion.LookRotation(interactText.transform.position - Camera.main.transform.position), Time.deltaTime * smooth);
+        }
+        
+
+
+        // Animation
+        animator.SetFloat("Speed", movement.magnitude);
     }
 
 
@@ -65,10 +89,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isInteracting = !isInteracting;
+            Interactable idata = interactableObject?.GetComponent<Interactable>();
             if (isInteracting) {
-                HudEntities.Shared.SetDialog(
-                    ConstructorStrings.Shared.park_welcome, 
-                    PlayerStrings.Shared.ok);
+                string dialog, response;
+                (dialog, response) = idata.GetDialog(GameDirector.Progress);
+                HudEntities.Shared.SetDialog(dialog, response);
+            } else {
+                idata.DismissAction(GameDirector.Progress);
+                HudEntities.Shared.DismissDialog();
             }
         }
     }

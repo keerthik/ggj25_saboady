@@ -7,12 +7,15 @@ public class LoadingSystem : SingletonBehaviour<LoadingSystem>
 
     // Align this enum with the indexing of scenes in Build Profiles/Scene List
     public enum SCENE {
-        START_SCENE      = 0,
-        PLAYER_TEST = 1,
-        UI_TEST     = 2,
-        SPLASH    = 3,
-        PARK        = 4,
-        UNKNOWN     = -1,
+        START_SCENE         = 0, //Loading
+        SPLASH              = 1, //start button
+        LEVEL_PARK          = 2, 
+        LEVEL_MUSEUM        = 3, 
+        LEVEL_CATHEDRAL     = 4, 
+        END_SCENE           = 5,
+        CREDITS             = 6,
+        PLAYER_TEST         = 7,
+        UNKNOWN             = -1,
     }
 
     [EditorReadOnly][SerializeField] private SCENE currentScene = SCENE.SPLASH;
