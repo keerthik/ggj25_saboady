@@ -14,12 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_Park.unity
     guid: 2478b6ce18a50384bb2d1f5f6d47fd17
-  - enabled: 0
-    path: Assets/Scenes/Playgrounds/UI_test.unity
-    guid: ed917f65531f044c68751782a65f2111
+  - enabled: 1
+    path: Assets/Scenes/Level_Museum.unity
+    guid: f08f9181637e1c24fbe5bdb1d72c93f2
+  - enabled: 1
+    path: Assets/Scenes/Level_Cathedral.unity
+    guid: 8a5d328c43202164299b171eab42c9fc
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 3751b90f1a0454c55b23fa233a7faf52
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 04d3d79487ffd40c3913cae600ddd9f0
   - enabled: 1
     path: Assets/Scenes/Playgrounds/Player_test.unity
     guid: 99c9720ab356a0642a771bea13969a05

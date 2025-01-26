@@ -50,6 +50,8 @@ public class LoadingSystem : SingletonBehaviour<LoadingSystem>
             currentScene = scene;
             onLoadComplete = action;
         };
-        
+    }
+    public SCENE GetCurrentScene() {
+        return currentScene;
     }
 }
