@@ -4,9 +4,9 @@ public class OldNPCInteractable : Interactable
 {
     public override (string, string) GetDialog(PlayerProgression progress) {
         if (progress.constructorProgress == 2) {
-            return (ConstructorStrings.Shared.npc0_contact_0, PlayerStrings.Shared.ok);
+            return (Constructors.Shared.npc0_contact_0, Basics.Shared.ok);
         } else if (progress.constructorProgress == 1) {
-            return (ConstructorStrings.Shared.npc0_midquest_1, PlayerStrings.Shared.illlook);
+            return (Constructors.Shared.npc0_midquest_1, Basics.Shared.illlook);
         } else {
             // isTrigger = false;
         }
