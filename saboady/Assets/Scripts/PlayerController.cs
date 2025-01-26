@@ -30,7 +30,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movePlayer();
+        if (!isInteracting)
+        {
+            movePlayer();
+        }
+        // interactableObject is not null if we're close to one
         if (interactableObject)
         {
             WaitForInteractPress();
@@ -66,9 +70,11 @@ public class PlayerController : MonoBehaviour
         {
             isInteracting = !isInteracting;
             if (isInteracting) {
-                HudEntities.Shared.SetDialog(
-                    ConstructorStrings.Shared.pond_1, 
-                    PlayerStrings.Shared.ok);
+                string dialog, response;
+                (dialog, response) = interactableObject
+                    .GetComponent<Interactable>()
+                    .GetDialog(GameDirector.Progress);
+                HudEntities.Shared.SetDialog(dialog, response);
             } else {
                 HudEntities.Shared.DismissDialog();
             }

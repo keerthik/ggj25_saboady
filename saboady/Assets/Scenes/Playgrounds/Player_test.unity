@@ -731,6 +731,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StringsContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 2223492843421308443, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
+      propertyPath: thanks
+      value: Thanks (E)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698630761339625073, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
+      propertyPath: pond_1
+      value: Grab water from the water fountain!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698630761339625073, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
+      propertyPath: pond_midquest
+      value: The fountain is over there!
+      objectReference: {fileID: 0}
     - target: {fileID: 8880694862807288919, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
       propertyPath: m_LocalPosition.x
       value: 383.79166
@@ -1101,8 +1113,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7706077489396561543, guid: d6c541b01999146218d9eb9002cc3d4b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8264315438967533178}
   m_SourcePrefab: {fileID: 100100000, guid: d6c541b01999146218d9eb9002cc3d4b, type: 3}
+--- !u!1 &8264315438967533177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7706077489396561543, guid: d6c541b01999146218d9eb9002cc3d4b, type: 3}
+  m_PrefabInstance: {fileID: 8264315438967533176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8264315438967533178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264315438967533177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa69b9cdfad8c403783b6a01f4312966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

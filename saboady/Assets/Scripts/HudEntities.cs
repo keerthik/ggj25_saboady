@@ -25,7 +25,4 @@ public class HudEntities : SingletonBehaviour<HudEntities>
     public void DismissDialog() {
         dialogPanel.SetActive(false);
     }
-
-    void Start() {
-    }
 }
