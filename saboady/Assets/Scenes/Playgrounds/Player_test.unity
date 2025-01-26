@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goodTrack: 1
-  portrait: {fileID: 0}
+  portrait: {fileID: 2800000, guid: 800d516dd7b76c449a37012e1ffdf0ab, type: 3}
 --- !u!65 &3506931
 BoxCollider:
   m_ObjectHideFlags: 0

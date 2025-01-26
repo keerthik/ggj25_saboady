@@ -6,7 +6,6 @@ public class ItemInteractable : Interactable
     [SerializeField] private int targetProgress;
     [SerializeField] private string itemKey;
     public override (string, string) GetDialog() {
-        int trackProgress = goodTrack? GameDirector.Shared.good : GameDirector.Shared.bad;
         if (TrackProgress == targetProgress - 1) {
             return (Items.Shared.all[itemKey], "moveon");
         } else {
