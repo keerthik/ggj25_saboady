@@ -1,0 +1,40 @@
+Cathedral Dialogue
+
+- Cult Leader
+    - 1st Contact: I still need materials to make this evil bubble, go and find them!
+      Response: Yes Sir!
+    - Quest Done: Great now we can make the evil bubble muahahaha!
+      (END)
+      
+- Cultist 1
+    - 1st Contact: I lost the key to the front door! Go find it!
+      Response: Sure
+    - Mid Quest: Did you find the key yet?
+      Response: Nope
+    - Quest Done: Nice! Here's some CHLORINE (Yellow Text), You can head inside now
+      Response: Thanks
+
+- Cultist 2
+    - 1st Contact: I may be a cultist but I still recycle, find me the right colored trash
+      Response: Sure
+    - Mid Quest: This place is still dirty!
+      Response: Sorry
+    - Quest Done: Good Job, here's this URANIUM (Yellow Text), I almost threw it out!
+
+- Cultist 3
+    - 1st Contact: Hey, Your not the leader! I won't confess to just anybody!
+      Response: Sorry
+    - Mid Quest: I told you get out!
+      Response: Sorry
+    - Talk to Cult Leader Mid Quest: Oh you need my hat, here I have an extra one.
+      Response: Thank you
+    - Quest Done: Leader, it's you! I was hiding this SULFUR (Yellow Text) from you, IM SORRY!!!!
+      Response: It's Okey
+
+- Cultist 4
+    - 1st Contact: Accidently blew up this wall with GUNPOWEDER (Yellow Text), there might be some extra in the    		   rubble somewhere.
+      Response: Yikes!
+    - Mid Quest: Did you find any extra in there?
+      Response: Not yet
+    - Quest Done: You found some untouched GUNPOWDER (Yellow Text)!
+      Response: Nice!
