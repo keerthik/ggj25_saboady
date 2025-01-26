@@ -6,6 +6,7 @@ public class LevelStart : MonoBehaviour
     [SerializeField] private GameObject playerControllerPrefab;
     [SerializeField] private GameObject stringsPrefab;
     [SerializeField] private GameObject hudPrefab;
+    [SerializeField] private int maxProgressGood;
     void Start()
     {
         if (GameDirector.Shared == null) {
@@ -17,7 +18,7 @@ public class LevelStart : MonoBehaviour
     }
 
     void Update() {
-        if (GameDirector.Shared.good > 7) {
+        if (GameDirector.Shared.good > maxProgressGood) {
             LoadingSystem.Shared.LoadSceneAndThen(LoadingSystem.SCENE.END_SCENE, () => {
                 // Do a camera fade or something if you want
                 AudioManager.Shared.AssignBackgroundMusic(LoadingSystem.SCENE.END_SCENE);
