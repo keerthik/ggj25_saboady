@@ -11,6 +11,7 @@ public class LoadingSystem : SingletonBehaviour<LoadingSystem>
         SPLASH           = 1,
         FIRST_LEVEL      = 2,
         END_SCENE        = 3,
+        PLAYER_TEST      = 4,
         UNKNOWN     = -1,
     }
 
