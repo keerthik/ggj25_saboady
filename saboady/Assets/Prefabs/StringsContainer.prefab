@@ -95,12 +95,10 @@ MonoBehaviour:
     _keys:
     - contact_5
     - midquest_6
-    - questdone_6
     _values:
     - "You wanna go to the top? Then go see Johnny, I\u2019m sure he\u2019ll lend
       you one."
     - "Go see Johnny, he\u2019s got your ticket."
-    - You obtained a train ticket!
   tree_contact_5: 
   tree_midquest_6: 
   ticket_obtain_6: 
@@ -171,6 +169,8 @@ MonoBehaviour:
     _keys:
     - water_1
     - soap_3
+    - ticket_6
     _values:
     - You obtained water!
     - You obtained soap!
+    - You obtained train ticket!

@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8222343614598810384}
-  speed: 20
+  speed: 40
   interactText: {fileID: 7277778006786171310}
   smooth: 10
 --- !u!114 &4080509391383135712

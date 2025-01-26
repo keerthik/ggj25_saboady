@@ -3926,8 +3926,9 @@ GameObject:
   - component: {fileID: 559639402}
   - component: {fileID: 559639401}
   - component: {fileID: 559639400}
+  - component: {fileID: 559639403}
   m_Layer: 0
-  m_Name: Newspaper stand
+  m_Name: Ticketstand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3942,8 +3943,8 @@ Transform:
   m_GameObject: {fileID: 559639398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -52.5, y: -7.577442, z: 55.3}
-  m_LocalScale: {x: 3, y: 6, z: 3}
+  m_LocalPosition: {x: -16.2, y: -5, z: 118}
+  m_LocalScale: {x: 3, y: 10, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1023404004}
@@ -4022,6 +4023,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559639398}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &559639403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559639398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32f110f7a8a044e1806997d12b94fba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodTrack: 1
+  portrait: {fileID: 0}
+  targetProgress: 7
+  itemKey: ticket_6
 --- !u!1 &563902697
 GameObject:
   m_ObjectHideFlags: 0
@@ -10408,7 +10425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1288437217
 Transform:
   m_ObjectHideFlags: 0
@@ -16134,7 +16151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1925895897
 Transform:
   m_ObjectHideFlags: 0

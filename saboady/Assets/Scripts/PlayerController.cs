@@ -100,6 +100,10 @@ public class PlayerController : MonoBehaviour
                 HudEntities.Shared.DismissDialog();
             }
         }
+        if (Input.GetKeyUp(KeyCode.Space))
+            GameDirector.Shared.good++;
+        if (Input.GetKeyUp(KeyCode.Escape))
+            GameDirector.Shared.good--;
     }
    
 
