@@ -1,0 +1,19 @@
+Museum level:
+- 1st contact: Can you get me the wood?
+   Response: Ok.
+- quest1done: Thanks. Here’s some extra!
+   Response: Thanks.
+-1st contact: Can you get me some stone?
+  Response: Ok.
+- quest2done: Thanks. Here’s some extra
+  Response: Thanks.
+- 1st contact: Can you get me some concrete?
+   Response: Ok.
+- quest1done: Thanks. Here’s some extra!
+   Response: Thanks.
+-1st contact: Can you get me some paint?
+  Response: Ok.
+- quest2done: Thanks. Here’s some extra
+  Response: Thanks.
+
+(END)
