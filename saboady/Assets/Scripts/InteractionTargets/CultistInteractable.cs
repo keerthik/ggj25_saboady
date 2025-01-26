@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class CultistInteractable : Interactable
 {
+    void Start() {
+        goodTrack = false;
+    }
     public override (string, string) GetDialog() {
         if (TrackProgress == 2) {
             return (Constructors.Shared.old["contact_2"], "ok");

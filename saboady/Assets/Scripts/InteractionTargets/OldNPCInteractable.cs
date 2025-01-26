@@ -3,6 +3,7 @@ using UnityEngine;
 public class OldNPCInteractable : Interactable
 {
     public override (string, string) GetDialog() {
+        HudEntities.Shared.SetPortrait(portrait);
         if (TrackProgress == 2) {
             return (Constructors.Shared.old["contact_2"], "ok");
         } else if (TrackProgress == 3) {

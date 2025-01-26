@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goodTrack: 1
+  portrait: {fileID: 0}
 --- !u!65 &3506931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -274,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goodTrack: 1
+  portrait: {fileID: 0}
   targetProgress: 2
   itemKey: water_1
 --- !u!65 &87457271
@@ -689,6 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goodTrack: 1
+  portrait: {fileID: 0}
   targetProgress: 4
   itemKey: soap_3
 --- !u!65 &613887977
@@ -1437,6 +1440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goodTrack: 1
+  portrait: {fileID: 2800000, guid: 8b7a8a2e3da93c8478feb60218e5d17e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
