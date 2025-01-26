@@ -67,8 +67,10 @@ public class PlayerController : MonoBehaviour
             isInteracting = !isInteracting;
             if (isInteracting) {
                 HudEntities.Shared.SetDialog(
-                    ConstructorStrings.Shared.park_welcome, 
+                    ConstructorStrings.Shared.pond_1, 
                     PlayerStrings.Shared.ok);
+            } else {
+                HudEntities.Shared.DismissDialog();
             }
         }
     }
