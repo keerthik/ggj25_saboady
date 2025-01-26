@@ -69,13 +69,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             isInteracting = !isInteracting;
+            Interactable idata = interactableObject?.GetComponent<Interactable>();
             if (isInteracting) {
                 string dialog, response;
-                (dialog, response) = interactableObject
-                    .GetComponent<Interactable>()
-                    .GetDialog(GameDirector.Progress);
+                (dialog, response) = idata.GetDialog(GameDirector.Progress);
                 HudEntities.Shared.SetDialog(dialog, response);
             } else {
+                idata.DismissAction(GameDirector.Progress);
                 HudEntities.Shared.DismissDialog();
             }
         }
