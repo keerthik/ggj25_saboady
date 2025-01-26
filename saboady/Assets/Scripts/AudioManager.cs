@@ -36,6 +36,7 @@ public class AudioManager : MonoBehaviour
 
     public void AssignBackgroundMusic(LoadingSystem.SCENE scene)
     {
+        Debug.Log($"Assigning music for {scene}");
         if(scene == LoadingSystem.SCENE.SPLASH)
         {
             musicSource.clip = menuBackgroundMusic;
@@ -44,14 +45,14 @@ public class AudioManager : MonoBehaviour
         {
             musicSource.clip = parkBackgroundMusic;
         }
-        else if(scene == LoadingSystem.SCENE.LEVEL_MUSEUM)
-        {
-            musicSource.clip = museumBackgroundMusic;
-        }
-        else if(scene == LoadingSystem.SCENE.LEVEL_CATHEDRAL)
-        {
-            musicSource.clip = cultistBackgroundMusic;
-        }
+        // else if(scene == LoadingSystem.SCENE.LEVEL_MUSEUM)
+        // {
+        //     musicSource.clip = museumBackgroundMusic;
+        // }
+        // else if(scene == LoadingSystem.SCENE.LEVEL_CATHEDRAL)
+        // {
+        //     musicSource.clip = cultistBackgroundMusic;
+        // }
         else if(scene == LoadingSystem.SCENE.PLAYER_TEST)
         {
             musicSource.clip = parkBackgroundMusic;

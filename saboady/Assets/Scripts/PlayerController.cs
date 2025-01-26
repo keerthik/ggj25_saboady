@@ -96,15 +96,20 @@ public class PlayerController : MonoBehaviour
             Interactable idata = interactableObject?.GetComponent<Interactable>();
             if (isInteracting) {
                 string dialog, response;
-                (dialog, response) = idata.GetDialog(GameDirector.Progress);
+                (dialog, response) = idata.GetDialog();
+                HudEntities.Shared.SetPortrait(idata.portrait);
                 HudEntities.Shared.SetDialog(dialog, response);
                 audioManager.PlaySFX(AudioManager.SFX_TYPE.DIALOGUE);
             } else {
-                idata.DismissAction(GameDirector.Progress);
+                idata.DismissAction();
                 HudEntities.Shared.DismissDialog();
                 audioManager.PlaySFX(AudioManager.SFX_TYPE.DIALOGUE);
             }
         }
+        if (Input.GetKeyUp(KeyCode.Space))
+            GameDirector.Shared.good++;
+        if (Input.GetKeyUp(KeyCode.Escape))
+            GameDirector.Shared.good--;
     }
    
 

@@ -36,7 +36,7 @@ public class SplashScreen : MonoBehaviour
             //audioManager.PlaySFX(AudioManager.SFX_TYPE.TRANSITION);
 
             // Fade out music
-            audioManager.FadeOutMusic();
+            // audioManager.FadeOutMusic();
             // Assign new background music 
             audioManager.AssignBackgroundMusic(sceneToLoad);
 
