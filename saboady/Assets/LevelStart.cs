@@ -20,6 +20,7 @@ public class LevelStart : MonoBehaviour
         if (GameDirector.Shared.good > 7) {
             LoadingSystem.Shared.LoadSceneAndThen(LoadingSystem.SCENE.END_SCENE, () => {
                 // Do a camera fade or something if you want
+                AudioManager.Shared.AssignBackgroundMusic(LoadingSystem.SCENE.END_SCENE);
                 LoadingSystem.Shared.MakeCurrentSceneActive();
         });
 

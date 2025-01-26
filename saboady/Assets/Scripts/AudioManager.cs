@@ -3,7 +3,7 @@ using UnityEditor.Rendering.Universal;
 using System.Collections;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : SingletonBehaviour<AudioManager>
 {
     public AudioClip menuBackgroundMusic;
     public AudioClip museumBackgroundMusic;

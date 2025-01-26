@@ -106,10 +106,14 @@ public class PlayerController : MonoBehaviour
                 audioManager.PlaySFX(AudioManager.SFX_TYPE.DIALOGUE);
             }
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space)) {
             GameDirector.Shared.good++;
-        if (Input.GetKeyUp(KeyCode.Escape))
+            Debug.Log($"Progress is now {GameDirector.Shared.good}");
+        }
+        if (Input.GetKeyUp(KeyCode.Escape)) {
             GameDirector.Shared.good--;
+            Debug.Log($"Progress is now {GameDirector.Shared.good}");
+        }
     }
    
 

@@ -5,7 +5,7 @@ public class TreeNPC : Interactable
     public override (string, string) GetDialog() {
         if (TrackProgress == 5) {
             return (Constructors.Shared.tree["contact_5"], "ok");
-        } else if (TrackProgress == 3) {
+        } else if (TrackProgress == 6) {
             return (Constructors.Shared.tree["midquest_6"], "ok");
         } else {
             // isTrigger = false;
