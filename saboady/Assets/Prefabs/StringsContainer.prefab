@@ -50,6 +50,8 @@ MonoBehaviour:
   illlook: I'll check it out!
   thanks: 
   thanks2: 
+  yessir: 
+  muahaha: Muahahaha?
 --- !u!114 &7698630761339625073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,5 +67,10 @@ MonoBehaviour:
   npc0_contact_0: Grab water from the water fountain!
   npc0_midquest_1: The fountain is over there!
   water_questdone_1: You obtained water!
-  oldman_1: 
-  oldman_done: 
+  oldman_contact_2: 
+  oldman_midquest_3: 
+  soap_obtain_3: 
+  oldman_questdone_4: 
+  tree_contact_5: 
+  tree_midquest_6: 
+  ticket_obtain_6: 
