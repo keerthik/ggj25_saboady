@@ -18,5 +18,4 @@ public class PondNPCInteractable : Interactable
             GameDirector.Shared.UpGoodProgress(2);
         }
     }
-
 }

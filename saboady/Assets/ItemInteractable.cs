@@ -8,7 +8,7 @@ public class ItemInteractable : Interactable
     public override (string, string) GetDialog() {
         int trackProgress = goodTrack? GameDirector.Shared.good : GameDirector.Shared.bad;
         if (GameDirector.Shared.good == 1) {
-            return (Items.Shared.all[itemKey], "");
+            return (Items.Shared.all[itemKey], "moveon");
         } else {
             // isTrigger = false;
             // Make sure doesn't disable too soon
@@ -18,12 +18,14 @@ public class ItemInteractable : Interactable
     }
 
     // Items are non-interactable at the start
-    protected override void Awake() {
-        GetComponent<Collider>().isTrigger = false;
+    void Start() {
+        thisCollider.isTrigger = false;
     }
 
     void Update() {
-
+        if (!thisCollider.isTrigger && TrackProgress == targetProgress - 1) {
+            thisCollider.isTrigger = true;
+        }
     }
     public override void DismissAction() {
         if (goodTrack) {
@@ -31,6 +33,7 @@ public class ItemInteractable : Interactable
         } else {
             GameDirector.Shared.UpBadProgress(targetProgress);
         }
+        thisCollider.isTrigger = false;
         gameObject.SetActive(false);
     }
 }

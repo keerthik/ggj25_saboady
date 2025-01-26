@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goodTrack: 1
-  targetProgress: 0
+  targetProgress: 2
   itemKey: water
 --- !u!65 &87457271
 BoxCollider:
@@ -237,7 +237,7 @@ Transform:
   m_GameObject: {fileID: 87457269}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.17, y: 1.77, z: 1.28}
+  m_LocalPosition: {x: 6.42, y: 1.77, z: 1.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -754,6 +754,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: StringsContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 7698630761339625073, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
+      propertyPath: old._keys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698630761339625073, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
+      propertyPath: old._values.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698630761339625073, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
+      propertyPath: 'old._keys.Array.data[0]'
+      value: contact_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698630761339625073, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
+      propertyPath: 'old._values.Array.data[0]'
+      value: "We\u2019re gonna need to keep things clean at the top. Can you grab
+        some soap along the way? I think I left some around here..."
+      objectReference: {fileID: 0}
     - target: {fileID: 8880694862807288919, guid: 26b31b521569e4330b4149b34cecd456, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1119,8 +1136,8 @@ Transform:
   m_GameObject: {fileID: 1747893355040348415}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.17, y: 1.77, z: 1.28}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9.8, y: 2, z: 4.3}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
