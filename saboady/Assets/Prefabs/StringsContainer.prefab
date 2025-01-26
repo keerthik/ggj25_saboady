@@ -47,6 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move_on: Move along (E)
   ok: Sure (E)
+  illlook: I'll check it out!
+  thanks: 
+  thanks2: 
 --- !u!114 &7698630761339625073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,4 +62,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e75ad56eb3db450da41d95027a98fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  park_welcome: Welcome! Can you help me find my hat?
+  npc0_contact_0: Grab water from the water fountain!
+  npc0_midquest_1: The fountain is over there!
+  water_questdone_1: You obtained water!
+  oldman_1: 
+  oldman_done: 

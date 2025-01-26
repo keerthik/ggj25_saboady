@@ -1,11 +1,11 @@
 Park Dialogue
 
 - Pond NPC
-    - 1stcontact: Grab water from the water fountain!
+    - 0: 1stcontact: Grab water from the water fountain!
       response: Sure
-    - midquest: The fountain is over there!
+    - 1: midquest: The fountain is over there!
       response: I'll check it out!
-    - ObtainItem: You obtained water!
+    - 1: ObtainItem: You obtained water! -> 2
 
 - Old man NPC
     - 1stcontact: Get soap for me
