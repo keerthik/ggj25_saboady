@@ -4,9 +4,6 @@ public class Constructors : SingletonBehaviour<Constructors>
 {
     [Header("Pond NPC")]
     public SerializableDictionary<string, string> pond;
-
-    public string npc0_contact_0;
-    public string npc0_midquest_1;
     public string water_questdone_1;
 
     [Header("Old man NPC")]
