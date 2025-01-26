@@ -1,18 +1,26 @@
 Museum level:
 - 1st contact: Can you get me the wood?
    Response: Ok.
+- Midquest: Find the wood yet?
+  Response: Not yet.
 - quest1done: Thanks. Here’s some extra!
    Response: Thanks.
 -1st contact: Can you get me some stone?
   Response: Ok.
+- Midquest: Find some stone yet?
+  Response: Not yet.
 - quest2done: Thanks. Here’s some extra
   Response: Thanks.
 - 1st contact: Can you get me some concrete?
    Response: Ok.
+- Midquest: Find some concrete yet?
+  Response: Not yet.
 - quest1done: Thanks. Here’s some extra!
    Response: Thanks.
 -1st contact: Can you get me some paint?
   Response: Ok.
+- Midquest: Find some paint yet?
+  Response: Not yet.
 - quest2done: Thanks. Here’s some extra
   Response: Thanks.
 
