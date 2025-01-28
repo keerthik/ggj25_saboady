@@ -96,12 +96,9 @@ MonoBehaviour:
     - contact_5
     - midquest_6
     _values:
-    - "You wanna go to the top? Then go see Johnny, I\u2019m sure he\u2019ll lend
-      you one."
-    - "Go see Johnny, he\u2019s got your ticket."
-  tree_contact_5: 
-  tree_midquest_6: 
-  ticket_obtain_6: 
+    - You wanna go to the top? Then go to the ticket booth by the train, there should
+      be a ticket for you.
+    - Go to the ticket booth by the train, there should be a ticket for you.
 --- !u!114 &7209787203371476520
 MonoBehaviour:
   m_ObjectHideFlags: 0
